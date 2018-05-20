@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>C++ CRUNCH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container-fluid d-flex flex-column align-items-center pt-5">
+        <img src="./img/256px-ISO_C++_Logo.svg.png" class="col-12 col-md-6 col-sm-8 col-xl-3 col-lg-5">
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="container-fluid bg-light" style="height:400px; width: 50%; box-shadow: 0 1px 5px rgba(0,0,0,0.12), 0 1px 15px rgba(0,0,0,0.2);">
+            <div class="col-7 p-10 float-left mt-2 h-80 bg-light" style="border-right: 1px solid rgb(189, 189, 189);">
+               <h3 class="pb-2 pt-2" style="border-bottom: 1px solid rgb(189, 189, 189);">Insert your code here</h3>
+               <textarea class="mt-2 w-100" rows="10" id="code-textarea"></textarea>
+               <div style="text-align:center">
+                    <button type="button" onclick="compile();" class="btn btn-outline-primary w-50">Crunch</button>
+               </div>
+            </div>
+            <div class="col-5 p-10 float-left h-100 pt-1 w-100" id="results">
+               <h3 class="pb-2 pt-2" style="border-bottom: 1px solid rgb(189, 189, 189);">Results</h3>
+               <template id="variable-template">
+                   <div class="row">
+                       Variable name:<h4>soto</h4>
+                       Variable type:<h5>bool</h5>
+                       Variable value:<h5>true</h5>
+                   </div>
+               </template>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script> 
+    <script src="./scripts/main.js"></script>    
+</body>
+</html>
